@@ -1,0 +1,11 @@
+Banks => 
+	Index => http://localhost:8080/home-management/page1.php?page=banks
+	Add => http://localhost:8080/home-management/save1.php?table=banks
+	Edit => http://localhost:8080/home-management/save1.php?table=banks&action=update&id=1
+	View => http://localhost:8080/home-management/save1.php?table=banks&action=view&id=1
+
+Categories => 
+	Index => http://localhost:8080/home-management/page1.php?page=categories
+	Add => http://localhost:8080/home-management/save1.php?table=categories
+	Edit => http://localhost:8080/home-management/save1.php?table=categories&action=update&id=1
+	View => http://localhost:8080/home-management/save1.php?table=categories&action=view&id=1

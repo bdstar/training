@@ -1,0 +1,41 @@
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+}
+#operation-result{
+    display: none;
+}
+.alert strong{
+    text-transform: uppercase;
+}
+.swal2-actions button{
+    margin-right: 10px;
+}
+.search-box,
+.daily-cost{
+    background-color: #f0f0f0;
+    border: 1px solid #aaa;
+    padding: 15px;
+    margin-top: 20px;
+}
+.required-sign{
+    color: red;
+    font-weight: bold;
+}
+.input-info-label{
+    font-size: 12px;
+    color: green;
+    font-weight: bold;
+}
+.input-danger-label{
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+}
+form#save-one .form-group{
+    border: 1px solid #cfcfcf;
+    padding: 10px 0px;
+}
+.form-group-btn{
+    border: none !important;
+}

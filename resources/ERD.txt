@@ -1,0 +1,125 @@
++ categories
+	id	int(11)
+	name	varchar(100)
+	description	varchar(200)
+	image		varchar(200)
+	created_at	datetime
+	updated_at	datetime
+
+courses
+	id		int(11)
+	name		varchar(200)
+	meeting_id	int(11)
++	sdescription 	varchar(200)
++	category_id	int(11)
+	description 	varchar(1000)
++	cost		int(11) [BDT, according to the country it will convert]
++	duration 	int(11) [in hours]
++	image		varchar(200)
+	created_at	datetime
+	updated_at	datetime
+
++courses_lession
+	id	int(11)
+	opendate	datetime
+	meetingdate	datetime
+	closedate	datetime
+	user_id		int(11)
+	course_id	int(11)
+	lession_id	int(11)
+	created_at	datetime
+	updated_at	datetime
+
++ lessions
+	id	int(11)
+	name	varchar(100)
+	description	varchar(1000)
+	sdescription 	varchar(200)
+	image		varchar(200)
+	created_at	datetime
+	updated_at	datetime
+
+meeting
+	id	int(11)
+	name	varchar(100)
+	description	varchar(200)
+	created_at	datetime
+	updated_at	datetime
+
++socials
+	id		int(11)
+	name		varchar(100)
+	icon		varchar(50)
+	url		varchar(200)
+	created_at	datetime
+	updated_at	datetime
+
++social_user
+	id		int(11)
+	user_id		int(11)
+	social_id	int(11)
+	url		varchar(200)
+	created_at	datetime
+	updated_at	datetime
+
++roles
+	id		int(11)
+	user_id		int(11)
+	name		varchar(100)
+	created_at	datetime
+	updated_at	datetime
+
+users
+	id 		int(11)
+	course_id	int(11)
+	name		varchar(200)
+	email		varchar(200)
+	phone		varchar(100)
++	password	varchar(200)
+	gender		varchar(50)
+	address		varchar(300)
+	country_id	int(11)
+	institution_id	int(11)
+	admission	int(11)
+	study		varchar(200)
+	profession_id	int(11)
++	company		varchar(200)
++	about		varchar(5000)
++	roles_id	int(11)
+	verified	int(11)
+	approved	int(11)
+	created_at	datetime
+	updated_at	datetime
+
++subscribers
+	id		int(11)
+	email		varchar(100)
+	created_at	datetime
+	updated_at	datetime
+
+
+Webpage
++	Home	
++	About
++	Our Team
++	Team-Profile
++	Courses
++	Course-Details
++	Course-Category
++	Testmonial
++	Contact
+
++	Login
+	Registration
++	Forget Password
++	Reset Password
+	
++	Cookies
++	Help
++	FAQ
++	Terms and Conditions
++	Privacy Policy 
+
+	User-Dashboard [Enrolled, Completed, User Data] <user, instructrator>
+	
+
